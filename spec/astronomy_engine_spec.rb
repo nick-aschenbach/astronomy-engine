@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'pry-nav'
 
 describe AstronomyEngine::App do
   include Rack::Test::Methods
