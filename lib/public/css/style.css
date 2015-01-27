@@ -1,0 +1,16 @@
+* {
+  font-family: sans-serif;
+}
+
+.space-above {
+  margin-top: 20px;
+}
+
+.initially-hidden {
+  display: none;
+}
+
+.image-padding {
+  margin: 5px;
+  vertical-align: top;
+}

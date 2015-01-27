@@ -1,13 +1,28 @@
 require 'astronomy_engine/version'
-require 'sinatra'
 require 'astronomy'
+
+require 'sinatra'
+require 'sinatra/assetpack'
 require 'sinatra/json'
 
 module AstronomyEngine
   class App < Sinatra::Base
     helpers Sinatra::JSON
+    register Sinatra::AssetPack
 
+    set :root, File.join(File.dirname(__FILE__), 'public')
     set :astronomy, Astronomy::Information.new
+    assets {
+      serve '/js', from: 'js'
+      serve '/css', from: 'css'
+    }
+
+    get '/' do
+      content_type 'text/html'
+      path = File.join(settings.root, 'index.html')
+      send_file path
+    end
+
     before { content_type 'application/json' }
 
     get '/categories' do

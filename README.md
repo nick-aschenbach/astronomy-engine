@@ -2,6 +2,8 @@
 
 A mountable engine for the `astronomy` gem
 
+![Screenshot](/screenshot/example.jpg?raw=true "Screenshot")
+
 ## Installation
 
 Add this line to your application's Gemfile:

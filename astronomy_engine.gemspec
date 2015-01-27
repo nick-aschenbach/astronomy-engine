@@ -20,10 +20,10 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.7'
   spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'capybara', '~> 2.4'
   spec.add_development_dependency 'rspec', '~> 3.0'
 
   spec.add_runtime_dependency 'sinatra', '~> 1.4'
   spec.add_runtime_dependency 'sinatra-contrib', '~> 1.4'
+  spec.add_runtime_dependency 'sinatra-assetpack', '~> 0.3'
   spec.add_runtime_dependency 'astronomy', '~> 0.2'
 end
